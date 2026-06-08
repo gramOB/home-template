@@ -1,0 +1,6 @@
+// Template AKS diagnostic query.
+// Replace this with your own resource scope and checks.
+
+resources
+| where type =~ 'microsoft.containerservice/managedclusters'
+| project id, name, resourceGroup, location

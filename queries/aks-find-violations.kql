@@ -1,0 +1,7 @@
+// Template AKS violation finder.
+
+resources
+| where type =~ 'microsoft.containerservice/managedclusters'
+| extend complianceState = tostring(properties.complianceState)
+| where complianceState !~ 'Compliant'
+| project id, name, complianceState

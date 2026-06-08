@@ -1,0 +1,4 @@
+// Template Sentinel alert rule lookup query.
+
+SecurityAlert
+| summarize count() by AlertName

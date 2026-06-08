@@ -1,0 +1,6 @@
+Questions to answer before tailoring the template:
+
+- What Azure DevOps org, project, team, and area path should be used?
+- What inbox triage commands should be supported?
+- What daily log format should be used?
+- Which query/report folders should be kept or removed?

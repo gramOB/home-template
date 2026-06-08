@@ -1,0 +1,5 @@
+// Template policy violations query.
+
+policyresources
+| where tostring(properties.complianceState) !~ 'Compliant'
+| project id, name, properties

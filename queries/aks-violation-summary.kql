@@ -1,0 +1,4 @@
+// Template violation summary query.
+
+policyresources
+| summarize violations = count() by tostring(properties.complianceState)

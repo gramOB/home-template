@@ -1,0 +1,5 @@
+// Template SQL injection detection query for Front Door WAF logs.
+
+AzureDiagnostics
+| where Category == 'FrontDoorWebApplicationFirewallLog'
+| summarize count() by tostring(action_s), tostring(clientIp_s)
