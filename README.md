@@ -34,7 +34,21 @@ azdo/                        exported query data and work item notes
 
 ## MCP Workflow
 
-The `reference/` folder includes generic Azure DevOps MCP setup notes.
-The `CLAUDE.md` file contains the operating instructions and work item conventions.
+For implementation, go directly to:
+
+- [reference/azure-devops-mcp-setup.md](/home/gob/home-template/reference/azure-devops-mcp-setup.md)
+
+That guide tells you what to edit, where to place the config, and how to validate MCP is working.
+
+Supporting files:
+
+- [mcp.json](/home/gob/home-template/mcp.json) (sanitized config template)
+- [reference/azure-devops-mcp-vscode-setup.md](/home/gob/home-template/reference/azure-devops-mcp-vscode-setup.md) (VS Code-specific notes)
 
 Before using this template for a real workspace, replace the placeholder Azure DevOps org, project, team, area path, and iteration values with your own.
+
+## MCP Setup Files Included
+
+- `mcp.json` - sanitized MCP server configuration example
+- `reference/azure-devops-mcp-setup.md` - full setup guide (PAT, server setup, verify, troubleshooting)
+- `reference/azure-devops-mcp-vscode-setup.md` - VS Code-focused setup and profile config steps

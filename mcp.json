@@ -1,0 +1,31 @@
+{
+  "servers": {
+    "azure-devops": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@azure-devops/mcp",
+        "YOUR_ORG",
+        "-d",
+        "core",
+        "work",
+        "work-items",
+        "wiki",
+        "-a",
+        "interactive"
+      ],
+      "env": {
+        "AZURE_DEVOPS_PAT": "${input:azure_devops_pat}"
+      }
+    }
+  },
+  "inputs": [
+    {
+      "id": "azure_devops_pat",
+      "type": "promptString",
+      "description": "Azure DevOps PAT (leave blank if using interactive auth)",
+      "password": true
+    }
+  ]
+}
